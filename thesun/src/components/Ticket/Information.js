@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ExampleIMG from '../../assets/images/Ticket/ticket_example.png';
+import ExampleIMG from '../../assets/images/Ticket/ticket_real.png';
 
 const Container = styled.div`
   width:100%;
@@ -22,11 +22,13 @@ const TitleBox = styled.div`
     white-space: pre-wrap;
     text-align:center;
     line-height: 170%;
+    
 
     @media ${props => props.theme.mobile} {
         font-size: 1.8rem;
     }
 `
+
 
 const MiddleBox = styled.div`
     display:flex;
@@ -45,6 +47,7 @@ const MiddleContainer = styled.div`
     align-items: flex-start;
     width: 25rem;
 
+
     @media ${props => props.theme.mobile} {
         margin-top : 2rem;
         width: 100%;
@@ -52,7 +55,7 @@ const MiddleContainer = styled.div`
 `
 
 const LeftIMGBOx = styled.img`
-    width: 12rem;
+    width: 22rem;
     margin-bottom: 2rem;
 `
 
@@ -102,11 +105,11 @@ const BottomBox = styled.div`
 function Information() {
   return (
     <Container>
-        <TitleBox>2월 17일{'\n'}예매 폼 및 MD 정식 오픈</TitleBox>
+        <TitleBox onClick={() => window.open('https://forms.gle/hAG8GidzEqzwxt6G7', "_blank")}>*예매폼 바로가기*</TitleBox>
         <MiddleBox>
             <MiddleContainer style={{'alignItems' : 'center'}}>
                 <LeftIMGBOx src={ExampleIMG}/>
-                <LeftTextBox>티켓 디자인은 2월 17일에 공개됩니다.</LeftTextBox>
+                <LeftTextBox>티켓 디자인         [  앞면 / 뒷면  ]</LeftTextBox>
             </MiddleContainer>
             <MiddleContainer>
                 <RightTitle>| 재관람 혜택 |</RightTitle>
@@ -118,5 +121,4 @@ function Information() {
     </Container>
   );
 }
-
-export default Information;
+    export default Information;
