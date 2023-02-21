@@ -148,7 +148,7 @@ function Seats() {
 		},
 		{
 			date : '03/11 19:00',
-			numOfSeats : 190
+			numOfSeats : 189
 		}
 	]
 
