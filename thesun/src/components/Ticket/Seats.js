@@ -136,19 +136,19 @@ function Seats() {
 	const lastSeatList = [
 		{
 			date : '03/09 19:30',
-			numOfSeats : 176
+			numOfSeats : 149
 		},
 		{
 			date : '03/10 19:30',
-			numOfSeats : 170
+			numOfSeats : 142
 		},
 		{
 			date : '03/11 14:00',
-			numOfSeats : 180
+			numOfSeats : 158
 		},
 		{
 			date : '03/11 19:00',
-			numOfSeats : 184
+			numOfSeats : 158
 		}
 	]
 
@@ -164,7 +164,7 @@ function Seats() {
 						{lastSeatList.map((item) => (
             	<LastSeatBox>
 								<TimeBox>{item.date}</TimeBox>
-								<LastSeatInfo>{item.numOfSeats} / 196</LastSeatInfo>
+								<LastSeatInfo>{item.numOfSeats} / 176</LastSeatInfo>
 							</LastSeatBox>
         		))}
               <BottomText>
